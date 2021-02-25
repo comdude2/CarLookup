@@ -9,7 +9,7 @@ package net.comdude2.apps.carlookup.main;
 public class CarLookup {
 	
 	//	Link example:
-	//	https://www.rapidcarcheck.co.uk/results?RegPlate=L21+LWS
+	//  Spaces in the registration plate are represented with a + sign.
 	//	Formula:	https://www.rapidcarcheck.co.uk/results?RegPlate=(PLATE)
 	
 	public static void main(String[] args) {
@@ -17,11 +17,7 @@ public class CarLookup {
 		if (args != null) {
 			if (args.length > 0) {
 				CarLookup.lookupAndPrint(args[0]);
-			} else {
-				CarLookup.lookupAndPrint("L21+LWS");
 			}
-		} else {
-			CarLookup.lookupAndPrint("L21+LWS");
 		}
 	}
 	
