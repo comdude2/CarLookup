@@ -199,6 +199,12 @@ public class CarDetails {
 		}
 	}
 	
+	/**
+	 * Extract data from HTML lines.
+	 * @param line
+	 * @return data
+	 * TODO make a smarter system that removes anything encapsulated in HTML tags so that the system is more dynamic.
+	 */
 	private static String getDataFromLine(String line) {
 		boolean colonFound = false;
 		boolean insideBrackets = false;
